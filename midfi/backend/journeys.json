@@ -1,0 +1,1602 @@
+{
+  "earlierRef": "3|OB|MT#14#94490#94490#94500#94500#0#0#105#94482#1#0#131#0#0#-2147483648#1#2|PDH#1175764ffbb4533879179cc469cda059|RD#5052025|RT#144258|US#1|RS#INIT",
+  "laterRef": "3|OF|MT#14#94490#94490#94500#94500#0#0#105#94482#1#0#131#0#0#-2147483648#1#2|PDH#1175764ffbb4533879179cc469cda059|RD#5052025|RT#144258|US#1|RS#INIT",
+  "journeys": [
+    {
+      "type": "journey",
+      "legs": [
+        {
+          "origin": {
+            "type": "stop",
+            "id": "3420028",
+            "name": "Flensburg ZOB",
+            "location": {
+              "type": "location",
+              "id": "3420028",
+              "latitude": 54.785819,
+              "longitude": 9.4371
+            },
+            "products": {
+              "nationalExpress": false,
+              "national": false,
+              "interregional": false,
+              "regional": true,
+              "suburban": false,
+              "bus": true,
+              "ferry": false,
+              "subway": false,
+              "tram": false,
+              "onCall": false
+            },
+            "station": {
+              "type": "station",
+              "id": "9027445",
+              "name": "Flensburg ZOB",
+              "location": {
+                "type": "location",
+                "id": "9027445",
+                "latitude": 54.785819,
+                "longitude": 9.437343
+              },
+              "products": {
+                "nationalExpress": false,
+                "national": false,
+                "interregional": false,
+                "regional": true,
+                "suburban": false,
+                "bus": true,
+                "ferry": false,
+                "subway": false,
+                "tram": false,
+                "onCall": false
+              },
+              "isMeta": true
+            }
+          },
+          "destination": {
+            "type": "stop",
+            "id": "9902671",
+            "name": "Flensburg Blasberg",
+            "location": {
+              "type": "location",
+              "id": "9902671",
+              "latitude": 54.798368,
+              "longitude": 9.453236
+            },
+            "products": {
+              "nationalExpress": false,
+              "national": false,
+              "interregional": false,
+              "regional": false,
+              "suburban": false,
+              "bus": true,
+              "ferry": false,
+              "subway": false,
+              "tram": false,
+              "onCall": false
+            },
+            "station": {
+              "type": "station",
+              "id": "9027276",
+              "name": "Flensburg Blasberg",
+              "location": {
+                "type": "location",
+                "id": "9027276",
+                "latitude": 54.79826,
+                "longitude": 9.453083
+              },
+              "products": {
+                "nationalExpress": false,
+                "national": false,
+                "interregional": false,
+                "regional": false,
+                "suburban": false,
+                "bus": true,
+                "ferry": false,
+                "subway": false,
+                "tram": false,
+                "onCall": false
+              },
+              "isMeta": true
+            }
+          },
+          "departure": "2025-05-05T14:42:00+02:00",
+          "plannedDeparture": "2025-05-05T14:40:00+02:00",
+          "departureDelay": 120,
+          "arrival": "2025-05-05T14:52:00+02:00",
+          "plannedArrival": "2025-05-05T14:50:00+02:00",
+          "arrivalDelay": 120,
+          "reachable": true,
+          "tripId": "1|37055|24|100|5052025",
+          "line": {
+            "type": "line",
+            "id": "de-nahsh-01001-7",
+            "fahrtNr": "2181",
+            "name": "Bus 7",
+            "public": true,
+            "adminCode": "AKTIV_",
+            "productName": "Bus",
+            "mode": "bus",
+            "product": "bus",
+            "operator": {
+              "type": "operator",
+              "id": "aktiv-bus-flensburg-gmbh",
+              "name": "Aktiv Bus Flensburg GmbH"
+            }
+          },
+          "direction": "Flensburg Tremmerup",
+          "currentLocation": {
+            "type": "location",
+            "latitude": 54.782817,
+            "longitude": 9.439608
+          },
+          "arrivalPlatform": null,
+          "plannedArrivalPlatform": null,
+          "arrivalPrognosisType": "prognosed",
+          "departurePlatform": "A1",
+          "plannedDeparturePlatform": "A1",
+          "departurePrognosisType": "prognosed",
+          "stopovers": [
+            {
+              "stop": {
+                "type": "stop",
+                "id": "3420028",
+                "name": "Flensburg ZOB",
+                "location": {
+                  "type": "location",
+                  "id": "3420028",
+                  "latitude": 54.785819,
+                  "longitude": 9.4371
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": true,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027445",
+                  "name": "Flensburg ZOB",
+                  "location": {
+                    "type": "location",
+                    "id": "9027445",
+                    "latitude": 54.785819,
+                    "longitude": 9.437343
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": true,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": null,
+              "plannedArrival": null,
+              "arrivalDelay": null,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": null,
+              "plannedArrivalPlatform": null,
+              "departure": "2025-05-05T14:42:00+02:00",
+              "plannedDeparture": "2025-05-05T14:40:00+02:00",
+              "departureDelay": 120,
+              "departurePlatform": null,
+              "departurePrognosisType": "prognosed",
+              "plannedDeparturePlatform": null
+            },
+            {
+              "stop": {
+                "type": "stop",
+                "id": "706674",
+                "name": "Flensburg Angelburger Straße",
+                "location": {
+                  "type": "location",
+                  "id": "706674",
+                  "latitude": 54.782781,
+                  "longitude": 9.439348
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": false,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027269",
+                  "name": "Flensburg Angelburger Straße",
+                  "location": {
+                    "type": "location",
+                    "id": "9027269",
+                    "latitude": 54.782808,
+                    "longitude": 9.439339
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": false,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": "2025-05-05T14:43:00+02:00",
+              "plannedArrival": "2025-05-05T14:41:00+02:00",
+              "arrivalDelay": 120,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": "prognosed",
+              "plannedArrivalPlatform": null,
+              "departure": "2025-05-05T14:43:00+02:00",
+              "plannedDeparture": "2025-05-05T14:41:00+02:00",
+              "departureDelay": 120,
+              "departurePlatform": null,
+              "departurePrognosisType": "prognosed",
+              "plannedDeparturePlatform": null
+            },
+            {
+              "stop": {
+                "type": "stop",
+                "id": "3440171",
+                "name": "Flensburg Südermarkt",
+                "location": {
+                  "type": "location",
+                  "id": "3440171",
+                  "latitude": 54.781837,
+                  "longitude": 9.437083
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": false,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027417",
+                  "name": "Flensburg Südermarkt",
+                  "location": {
+                    "type": "location",
+                    "id": "9027417",
+                    "latitude": 54.782124,
+                    "longitude": 9.436723
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": false,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": "2025-05-05T14:45:00+02:00",
+              "plannedArrival": "2025-05-05T14:43:00+02:00",
+              "arrivalDelay": 120,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": "prognosed",
+              "plannedArrivalPlatform": null,
+              "departure": "2025-05-05T14:45:00+02:00",
+              "plannedDeparture": "2025-05-05T14:43:00+02:00",
+              "departureDelay": 120,
+              "departurePlatform": null,
+              "departurePrognosisType": "prognosed",
+              "plannedDeparturePlatform": null
+            },
+            {
+              "stop": {
+                "type": "stop",
+                "id": "3420040",
+                "name": "Flensburg Hafermarkt",
+                "location": {
+                  "type": "location",
+                  "id": "3420040",
+                  "latitude": 54.783572,
+                  "longitude": 9.443761
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": false,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027326",
+                  "name": "Flensburg Hafermarkt",
+                  "location": {
+                    "type": "location",
+                    "id": "9027326",
+                    "latitude": 54.783374,
+                    "longitude": 9.44351
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": false,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": "2025-05-05T14:47:00+02:00",
+              "plannedArrival": "2025-05-05T14:45:00+02:00",
+              "arrivalDelay": 120,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": "prognosed",
+              "plannedArrivalPlatform": null,
+              "departure": "2025-05-05T14:47:00+02:00",
+              "plannedDeparture": "2025-05-05T14:45:00+02:00",
+              "departureDelay": 120,
+              "departurePlatform": null,
+              "departurePrognosisType": "prognosed",
+              "plannedDeparturePlatform": null
+            },
+            {
+              "stop": {
+                "type": "stop",
+                "id": "3420044",
+                "name": "Flensburg St.-Jürgen-Platz",
+                "location": {
+                  "type": "location",
+                  "id": "3420044",
+                  "latitude": 54.787626,
+                  "longitude": 9.444373
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": false,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027410",
+                  "name": "Flensburg St.-Jürgen-Platz",
+                  "location": {
+                    "type": "location",
+                    "id": "9027410",
+                    "latitude": 54.787617,
+                    "longitude": 9.444328
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": false,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": "2025-05-05T14:49:00+02:00",
+              "plannedArrival": "2025-05-05T14:47:00+02:00",
+              "arrivalDelay": 120,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": "prognosed",
+              "plannedArrivalPlatform": null,
+              "departure": "2025-05-05T14:49:00+02:00",
+              "plannedDeparture": "2025-05-05T14:47:00+02:00",
+              "departureDelay": 120,
+              "departurePlatform": null,
+              "departurePrognosisType": "prognosed",
+              "plannedDeparturePlatform": null
+            },
+            {
+              "stop": {
+                "type": "stop",
+                "id": "706714",
+                "name": "Flensburg Parsevalstraße",
+                "location": {
+                  "type": "location",
+                  "id": "706714",
+                  "latitude": 54.790457,
+                  "longitude": 9.447474
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": false,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027387",
+                  "name": "Flensburg Parsevalstraße",
+                  "location": {
+                    "type": "location",
+                    "id": "9027387",
+                    "latitude": 54.790359,
+                    "longitude": 9.447375
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": false,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": "2025-05-05T14:50:00+02:00",
+              "plannedArrival": "2025-05-05T14:48:00+02:00",
+              "arrivalDelay": 120,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": "prognosed",
+              "plannedArrivalPlatform": null,
+              "departure": "2025-05-05T14:50:00+02:00",
+              "plannedDeparture": "2025-05-05T14:48:00+02:00",
+              "departureDelay": 120,
+              "departurePlatform": null,
+              "departurePrognosisType": "prognosed",
+              "plannedDeparturePlatform": null
+            },
+            {
+              "stop": {
+                "type": "stop",
+                "id": "706715",
+                "name": "Flensburg Bohlberg",
+                "location": {
+                  "type": "location",
+                  "id": "706715",
+                  "latitude": 54.795204,
+                  "longitude": 9.449622
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": false,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027277",
+                  "name": "Flensburg Bohlberg",
+                  "location": {
+                    "type": "location",
+                    "id": "9027277",
+                    "latitude": 54.795177,
+                    "longitude": 9.449569
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": false,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": "2025-05-05T14:51:00+02:00",
+              "plannedArrival": "2025-05-05T14:49:00+02:00",
+              "arrivalDelay": 120,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": "prognosed",
+              "plannedArrivalPlatform": null,
+              "departure": "2025-05-05T14:51:00+02:00",
+              "plannedDeparture": "2025-05-05T14:49:00+02:00",
+              "departureDelay": 120,
+              "departurePlatform": null,
+              "departurePrognosisType": "prognosed",
+              "plannedDeparturePlatform": null
+            },
+            {
+              "stop": {
+                "type": "stop",
+                "id": "9902671",
+                "name": "Flensburg Blasberg",
+                "location": {
+                  "type": "location",
+                  "id": "9902671",
+                  "latitude": 54.798368,
+                  "longitude": 9.453236
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": false,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027276",
+                  "name": "Flensburg Blasberg",
+                  "location": {
+                    "type": "location",
+                    "id": "9027276",
+                    "latitude": 54.79826,
+                    "longitude": 9.453083
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": false,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": "2025-05-05T14:52:00+02:00",
+              "plannedArrival": "2025-05-05T14:50:00+02:00",
+              "arrivalDelay": 120,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": "prognosed",
+              "plannedArrivalPlatform": null,
+              "departure": null,
+              "plannedDeparture": null,
+              "departureDelay": null,
+              "departurePlatform": null,
+              "departurePrognosisType": null,
+              "plannedDeparturePlatform": null
+            }
+          ],
+          "remarks": [
+            {
+              "type": "hint",
+              "code": "ag",
+              "text": "Keine Mitnahme von Elektro-Tretrollern"
+            },
+            {
+              "type": "hint",
+              "code": "cc",
+              "text": "Linie der Aktiv Bus Flensburg GmbH, Info: <a href=\"tel:04615059107\">0461 5059107</a>"
+            }
+          ],
+          "cycle": {
+            "min": 600,
+            "max": 600,
+            "nr": 13
+          }
+        }
+      ],
+      "refreshToken": "¶HKI¶T$A=1@O=Flensburg ZOB@L=3420028@a=128@$A=1@O=Flensburg Blasberg@L=9902671@a=128@$202505051440$202505051450$Bus    7$$1$$$$$$¶KC¶#VE#2#CF#100#CA#0#CM#0#SICT#0#AM#16401#AM2#0#RT#15#¶KRCC¶#VE#1#VOLL#IST#",
+      "cycle": {
+        "min": 600
+      },
+      "remarks": [
+        {
+          "type": "status",
+          "code": "text.realtime.connection.alternative.summary",
+          "text": "Fahrtmöglichkeit gemäß aktueller Verkehrslage."
+        },
+        {
+          "type": "status",
+          "code": "text.realtime.connection.alternative.detail",
+          "text": "Fahrtmöglichkeit gemäß aktueller Verkehrslage. Bitte beachten Sie die aktuellen Echtzeitinformationen."
+        }
+      ],
+      "tickets": [
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Einzelkarte 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Einzelkarte 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Einzelkarte Kind 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Einzelkarte Kind 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Tageskarte 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Tageskarte 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Kleingruppenkarte 2 Pers. 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Kleingruppenkarte 2 Pers. 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Kleingruppenkarte 3 Pers. 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Kleingruppenkarte 3 Pers. 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Kleingruppenkarte 4 Pers. 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Kleingruppenkarte 4 Pers. 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Kleingruppenkarte 5 Pers. 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Kleingruppenkarte 5 Pers. 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Fahrradeinzelkarte Bus",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Fahrradeinzelkarte Bus",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Fahrradtageskarte",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Fahrradtageskarte",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - 4er-Karte Bus",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "4er-Karte Bus",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Deutschlandticket 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Deutschlandticket 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Deutschland-Schulticket 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Deutschland-Schulticket 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Wochenkarte 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Wochenkarte 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Monatskarte 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Monatskarte 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Monatskarte Abo 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Monatskarte Abo 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Wochenk. Schüler/Azubi 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Wochenk. Schüler/Azubi 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Monatsk. Schüler/Azubi 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Monatsk. Schüler/Azubi 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - MoKa Abo Schüler/Azubi 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "MoKa Abo Schüler/Azubi 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        }
+      ]
+    },
+    {
+      "type": "journey",
+      "legs": [
+        {
+          "origin": {
+            "type": "stop",
+            "id": "3420028",
+            "name": "Flensburg ZOB",
+            "location": {
+              "type": "location",
+              "id": "3420028",
+              "latitude": 54.785819,
+              "longitude": 9.4371
+            },
+            "products": {
+              "nationalExpress": false,
+              "national": false,
+              "interregional": false,
+              "regional": true,
+              "suburban": false,
+              "bus": true,
+              "ferry": false,
+              "subway": false,
+              "tram": false,
+              "onCall": false
+            },
+            "station": {
+              "type": "station",
+              "id": "9027445",
+              "name": "Flensburg ZOB",
+              "location": {
+                "type": "location",
+                "id": "9027445",
+                "latitude": 54.785819,
+                "longitude": 9.437343
+              },
+              "products": {
+                "nationalExpress": false,
+                "national": false,
+                "interregional": false,
+                "regional": true,
+                "suburban": false,
+                "bus": true,
+                "ferry": false,
+                "subway": false,
+                "tram": false,
+                "onCall": false
+              },
+              "isMeta": true
+            }
+          },
+          "destination": {
+            "type": "stop",
+            "id": "9902671",
+            "name": "Flensburg Blasberg",
+            "location": {
+              "type": "location",
+              "id": "9902671",
+              "latitude": 54.798368,
+              "longitude": 9.453236
+            },
+            "products": {
+              "nationalExpress": false,
+              "national": false,
+              "interregional": false,
+              "regional": false,
+              "suburban": false,
+              "bus": true,
+              "ferry": false,
+              "subway": false,
+              "tram": false,
+              "onCall": false
+            },
+            "station": {
+              "type": "station",
+              "id": "9027276",
+              "name": "Flensburg Blasberg",
+              "location": {
+                "type": "location",
+                "id": "9027276",
+                "latitude": 54.79826,
+                "longitude": 9.453083
+              },
+              "products": {
+                "nationalExpress": false,
+                "national": false,
+                "interregional": false,
+                "regional": false,
+                "suburban": false,
+                "bus": true,
+                "ferry": false,
+                "subway": false,
+                "tram": false,
+                "onCall": false
+              },
+              "isMeta": true
+            }
+          },
+          "departure": "2025-05-05T14:50:00+02:00",
+          "plannedDeparture": "2025-05-05T14:50:00+02:00",
+          "departureDelay": 0,
+          "arrival": "2025-05-05T15:00:00+02:00",
+          "plannedArrival": "2025-05-05T15:00:00+02:00",
+          "arrivalDelay": 0,
+          "reachable": true,
+          "tripId": "1|37014|27|100|5052025",
+          "line": {
+            "type": "line",
+            "id": "de-nahsh-01001-3",
+            "fahrtNr": "1670",
+            "name": "Bus 3",
+            "public": true,
+            "adminCode": "AKTIV_",
+            "productName": "Bus",
+            "mode": "bus",
+            "product": "bus",
+            "operator": {
+              "type": "operator",
+              "id": "aktiv-bus-flensburg-gmbh",
+              "name": "Aktiv Bus Flensburg GmbH"
+            }
+          },
+          "direction": "Flensburg Solitüde",
+          "currentLocation": {
+            "type": "location",
+            "latitude": 54.791545,
+            "longitude": 9.424309
+          },
+          "arrivalPlatform": null,
+          "plannedArrivalPlatform": null,
+          "arrivalPrognosisType": "prognosed",
+          "departurePlatform": "A1",
+          "plannedDeparturePlatform": "A1",
+          "departurePrognosisType": "prognosed",
+          "stopovers": [
+            {
+              "stop": {
+                "type": "stop",
+                "id": "3420028",
+                "name": "Flensburg ZOB",
+                "location": {
+                  "type": "location",
+                  "id": "3420028",
+                  "latitude": 54.785819,
+                  "longitude": 9.4371
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": true,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027445",
+                  "name": "Flensburg ZOB",
+                  "location": {
+                    "type": "location",
+                    "id": "9027445",
+                    "latitude": 54.785819,
+                    "longitude": 9.437343
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": true,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": null,
+              "plannedArrival": null,
+              "arrivalDelay": null,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": null,
+              "plannedArrivalPlatform": null,
+              "departure": "2025-05-05T14:50:00+02:00",
+              "plannedDeparture": "2025-05-05T14:50:00+02:00",
+              "departureDelay": 0,
+              "departurePlatform": null,
+              "departurePrognosisType": "prognosed",
+              "plannedDeparturePlatform": null
+            },
+            {
+              "stop": {
+                "type": "stop",
+                "id": "706674",
+                "name": "Flensburg Angelburger Straße",
+                "location": {
+                  "type": "location",
+                  "id": "706674",
+                  "latitude": 54.782781,
+                  "longitude": 9.439348
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": false,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027269",
+                  "name": "Flensburg Angelburger Straße",
+                  "location": {
+                    "type": "location",
+                    "id": "9027269",
+                    "latitude": 54.782808,
+                    "longitude": 9.439339
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": false,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": "2025-05-05T14:51:00+02:00",
+              "plannedArrival": "2025-05-05T14:51:00+02:00",
+              "arrivalDelay": 0,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": "prognosed",
+              "plannedArrivalPlatform": null,
+              "departure": "2025-05-05T14:51:00+02:00",
+              "plannedDeparture": "2025-05-05T14:51:00+02:00",
+              "departureDelay": 0,
+              "departurePlatform": null,
+              "departurePrognosisType": "prognosed",
+              "plannedDeparturePlatform": null
+            },
+            {
+              "stop": {
+                "type": "stop",
+                "id": "3440171",
+                "name": "Flensburg Südermarkt",
+                "location": {
+                  "type": "location",
+                  "id": "3440171",
+                  "latitude": 54.781837,
+                  "longitude": 9.437083
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": false,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027417",
+                  "name": "Flensburg Südermarkt",
+                  "location": {
+                    "type": "location",
+                    "id": "9027417",
+                    "latitude": 54.782124,
+                    "longitude": 9.436723
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": false,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": "2025-05-05T14:53:00+02:00",
+              "plannedArrival": "2025-05-05T14:53:00+02:00",
+              "arrivalDelay": 0,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": "prognosed",
+              "plannedArrivalPlatform": null,
+              "departure": "2025-05-05T14:53:00+02:00",
+              "plannedDeparture": "2025-05-05T14:53:00+02:00",
+              "departureDelay": 0,
+              "departurePlatform": null,
+              "departurePrognosisType": "prognosed",
+              "plannedDeparturePlatform": null
+            },
+            {
+              "stop": {
+                "type": "stop",
+                "id": "3420040",
+                "name": "Flensburg Hafermarkt",
+                "location": {
+                  "type": "location",
+                  "id": "3420040",
+                  "latitude": 54.783572,
+                  "longitude": 9.443761
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": false,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027326",
+                  "name": "Flensburg Hafermarkt",
+                  "location": {
+                    "type": "location",
+                    "id": "9027326",
+                    "latitude": 54.783374,
+                    "longitude": 9.44351
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": false,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": "2025-05-05T14:55:00+02:00",
+              "plannedArrival": "2025-05-05T14:55:00+02:00",
+              "arrivalDelay": 0,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": "prognosed",
+              "plannedArrivalPlatform": null,
+              "departure": "2025-05-05T14:55:00+02:00",
+              "plannedDeparture": "2025-05-05T14:55:00+02:00",
+              "departureDelay": 0,
+              "departurePlatform": null,
+              "departurePrognosisType": "prognosed",
+              "plannedDeparturePlatform": null
+            },
+            {
+              "stop": {
+                "type": "stop",
+                "id": "3420044",
+                "name": "Flensburg St.-Jürgen-Platz",
+                "location": {
+                  "type": "location",
+                  "id": "3420044",
+                  "latitude": 54.787626,
+                  "longitude": 9.444373
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": false,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027410",
+                  "name": "Flensburg St.-Jürgen-Platz",
+                  "location": {
+                    "type": "location",
+                    "id": "9027410",
+                    "latitude": 54.787617,
+                    "longitude": 9.444328
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": false,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": "2025-05-05T14:57:00+02:00",
+              "plannedArrival": "2025-05-05T14:57:00+02:00",
+              "arrivalDelay": 0,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": "prognosed",
+              "plannedArrivalPlatform": null,
+              "departure": "2025-05-05T14:57:00+02:00",
+              "plannedDeparture": "2025-05-05T14:57:00+02:00",
+              "departureDelay": 0,
+              "departurePlatform": null,
+              "departurePrognosisType": "prognosed",
+              "plannedDeparturePlatform": null
+            },
+            {
+              "stop": {
+                "type": "stop",
+                "id": "706714",
+                "name": "Flensburg Parsevalstraße",
+                "location": {
+                  "type": "location",
+                  "id": "706714",
+                  "latitude": 54.790457,
+                  "longitude": 9.447474
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": false,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027387",
+                  "name": "Flensburg Parsevalstraße",
+                  "location": {
+                    "type": "location",
+                    "id": "9027387",
+                    "latitude": 54.790359,
+                    "longitude": 9.447375
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": false,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": "2025-05-05T14:58:00+02:00",
+              "plannedArrival": "2025-05-05T14:58:00+02:00",
+              "arrivalDelay": 0,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": "prognosed",
+              "plannedArrivalPlatform": null,
+              "departure": "2025-05-05T14:58:00+02:00",
+              "plannedDeparture": "2025-05-05T14:58:00+02:00",
+              "departureDelay": 0,
+              "departurePlatform": null,
+              "departurePrognosisType": "prognosed",
+              "plannedDeparturePlatform": null
+            },
+            {
+              "stop": {
+                "type": "stop",
+                "id": "706715",
+                "name": "Flensburg Bohlberg",
+                "location": {
+                  "type": "location",
+                  "id": "706715",
+                  "latitude": 54.795204,
+                  "longitude": 9.449622
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": false,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027277",
+                  "name": "Flensburg Bohlberg",
+                  "location": {
+                    "type": "location",
+                    "id": "9027277",
+                    "latitude": 54.795177,
+                    "longitude": 9.449569
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": false,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": "2025-05-05T14:59:00+02:00",
+              "plannedArrival": "2025-05-05T14:59:00+02:00",
+              "arrivalDelay": 0,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": "prognosed",
+              "plannedArrivalPlatform": null,
+              "departure": "2025-05-05T14:59:00+02:00",
+              "plannedDeparture": "2025-05-05T14:59:00+02:00",
+              "departureDelay": 0,
+              "departurePlatform": null,
+              "departurePrognosisType": "prognosed",
+              "plannedDeparturePlatform": null
+            },
+            {
+              "stop": {
+                "type": "stop",
+                "id": "9902671",
+                "name": "Flensburg Blasberg",
+                "location": {
+                  "type": "location",
+                  "id": "9902671",
+                  "latitude": 54.798368,
+                  "longitude": 9.453236
+                },
+                "products": {
+                  "nationalExpress": false,
+                  "national": false,
+                  "interregional": false,
+                  "regional": false,
+                  "suburban": false,
+                  "bus": true,
+                  "ferry": false,
+                  "subway": false,
+                  "tram": false,
+                  "onCall": false
+                },
+                "station": {
+                  "type": "station",
+                  "id": "9027276",
+                  "name": "Flensburg Blasberg",
+                  "location": {
+                    "type": "location",
+                    "id": "9027276",
+                    "latitude": 54.79826,
+                    "longitude": 9.453083
+                  },
+                  "products": {
+                    "nationalExpress": false,
+                    "national": false,
+                    "interregional": false,
+                    "regional": false,
+                    "suburban": false,
+                    "bus": true,
+                    "ferry": false,
+                    "subway": false,
+                    "tram": false,
+                    "onCall": false
+                  },
+                  "isMeta": true
+                }
+              },
+              "arrival": "2025-05-05T15:00:00+02:00",
+              "plannedArrival": "2025-05-05T15:00:00+02:00",
+              "arrivalDelay": 0,
+              "arrivalPlatform": null,
+              "arrivalPrognosisType": "prognosed",
+              "plannedArrivalPlatform": null,
+              "departure": null,
+              "plannedDeparture": null,
+              "departureDelay": null,
+              "departurePlatform": null,
+              "departurePrognosisType": null,
+              "plannedDeparturePlatform": null
+            }
+          ],
+          "remarks": [
+            {
+              "type": "hint",
+              "code": "ag",
+              "text": "Keine Mitnahme von Elektro-Tretrollern"
+            },
+            {
+              "type": "hint",
+              "code": "cc",
+              "text": "Linie der Aktiv Bus Flensburg GmbH, Info: <a href=\"tel:04615059107\">0461 5059107</a>"
+            },
+            {
+              "id": "171662",
+              "type": "warning",
+              "summary": "Linie 3: Sperrung Solitüder Straße",
+              "text": "Ab Mittwoch, 16.04.2025 können die Busse der Linie 3 die Solitüder Straße aufgrund von Bauarbeiten nicht befahren. Die Busse fahren über die Fördestraße. Nähere Informationen über den Link zur Homepage.",
+              "icon": {
+                "type": "HIM0",
+                "title": null
+              },
+              "priority": 100,
+              "products": {
+                "nationalExpress": false,
+                "national": false,
+                "interregional": false,
+                "regional": false,
+                "suburban": false,
+                "bus": true,
+                "ferry": false,
+                "subway": false,
+                "tram": false,
+                "onCall": false
+              },
+              "company": "AktivBus",
+              "categories": [
+                0
+              ],
+              "validFrom": "2025-04-14T00:00:00+02:00",
+              "validUntil": "2025-06-07T23:59:00+02:00",
+              "modified": "2025-04-17T09:59:02+02:00"
+            }
+          ],
+          "cycle": {
+            "min": 600,
+            "max": 600,
+            "nr": 13
+          }
+        }
+      ],
+      "refreshToken": "¶HKI¶T$A=1@O=Flensburg ZOB@L=3420028@a=128@$A=1@O=Flensburg Blasberg@L=9902671@a=128@$202505051450$202505051500$Bus    3$$1$$$$$$¶KC¶#VE#2#CF#100#CA#0#CM#0#SICT#0#AM#16401#AM2#0#RT#15#¶KRCC¶#VE#1#",
+      "cycle": {
+        "min": 600
+      },
+      "remarks": [],
+      "tickets": [
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Einzelkarte 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Einzelkarte 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Einzelkarte Kind 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Einzelkarte Kind 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Tageskarte 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Tageskarte 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Kleingruppenkarte 2 Pers. 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Kleingruppenkarte 2 Pers. 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Kleingruppenkarte 3 Pers. 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Kleingruppenkarte 3 Pers. 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Kleingruppenkarte 4 Pers. 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Kleingruppenkarte 4 Pers. 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Kleingruppenkarte 5 Pers. 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Kleingruppenkarte 5 Pers. 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Fahrradeinzelkarte Bus",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Fahrradeinzelkarte Bus",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Fahrradtageskarte",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Fahrradtageskarte",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - 4er-Karte Bus",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "4er-Karte Bus",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Deutschlandticket 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Deutschlandticket 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Deutschland-Schulticket 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Deutschland-Schulticket 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Wochenkarte 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Wochenkarte 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Monatskarte 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Monatskarte 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Monatskarte Abo 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Monatskarte Abo 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Wochenk. Schüler/Azubi 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Wochenk. Schüler/Azubi 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - Monatsk. Schüler/Azubi 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "Monatsk. Schüler/Azubi 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        },
+        {
+          "name": "Preisstufe 1FL mit/über: direkt - MoKa Abo Schüler/Azubi 2.Kl",
+          "tariff": "Preisstufe 1FL mit/über: direkt",
+          "variant": "MoKa Abo Schüler/Azubi 2.Kl",
+          "amount": null,
+          "hint": "No pricing information available."
+        }
+      ]
+    }
+  ],
+  "realtimeDataFrom": 1746448941
+}

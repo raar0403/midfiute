@@ -1,0 +1,45 @@
+{
+	"name": "nahsh-hafas",
+	"description": "JavaScript client for the NAH.SH HAFAS API.",
+	"version": "5.0.0",
+	"keywords": [
+		"nah.sh",
+		"nahverkehr",
+		"schleswig",
+		"holstein",
+		"bahn",
+		"germany",
+		"kiel",
+		"lübeck",
+		"flensburg",
+		"railway",
+		"public transport",
+		"api",
+		"open data",
+		"hafas",
+		"http",
+		"fptf"
+	],
+	"author": "Julius Tens <mail@juliustens.eu>",
+	"homepage": "https://github.com/juliuste/nahsh-hafas",
+	"repository": "juliuste/nahsh-hafas",
+	"bugs": "https://github.com/juliuste/nahsh-hafas/issues",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^5.1.0",
+		"fs": "^0.0.1-security",
+		"hafas-client": "^5.15.1"
+	},
+	"scripts": {
+		"test": "node example.js >/dev/null",
+		"prepare": "npm test"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"license": "ISC"
+}
