@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>NAH.SH Prototyp mit Favoriten</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <header>
+    <button style="position: absolute; z-index: 10000;" id="menu-toggle">☰</button>
+    <h1 id="header-title">Startseite</h1>
+    <button id="favorites-toggle">♥</button>
+  </header>
+
+  <nav id="menu">
+    <ul>
+      <li><button data-screen="home"><span class="icon">🏠</span> Home</button></li>
+      <li><button data-screen="planner"><span class="icon">🛣️</span> Routenplaner</button></li>
+      <li><button data-screen="stop"><span class="icon">🚍</span> Haltestellen</button></li>
+      <li><button data-screen="map"><span class="icon">🗺️</span> Standort</button></li>
+      <li><button data-screen="tickets"><span class="icon">🎫</span> Tickets</button></li>
+      <li><button data-screen="favorites"><span class="icon">♥</span> Favoriten</button></li>
+      <li><button data-screen="settings"><span class="icon">⚙️</span> Einstellungen</button></li>
+      <li><button data-screen="alarms"><span class="icon">🔔</span> Alarme</button></li>
+      <li><button data-screen="info"><span class="icon">ℹ️</span> Info</button></li>
+ 
+      
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Home -->
+    <section id="home" class="screen active">
+      <div class="ticket-card">
+        <div class="ticket-icons">
+          <span class="icon-graduation">🎓</span>
+          <span class="icon-briefcase">💼</span>
+        </div>
+        <p>D-Ticket NAH.SH | Job | SeTi</p>
+        <button class="anzeigen-button">ANZEIGEN</button>
+      </div>
+      <div class="search-inputs">
+        <div class="input-group">
+          <span class="icon-start">A</span>
+          <button class="start-input">Start eingeben</button>
+        </div>
+        <div class="input-group">
+          <span class="icon-destination">B</span>
+          <button class="end-input "> Ziel Eingeben</button>
+        </div>
+        <button id="search-button">Anzeigen</button>
+      </div>
+      <h2>Abfahrten in der Nähe</h2>
+      <ul class="stop-list">
+        <li><button>Flensburg Campus Hochschule – 85 m</button></li>
+        <li><button>Kiel Hbf – 200 m</button></li>
+        <li><button>Hamburg ZOB – 1,2 km</button></li>
+      </ul>
+
+      
+    </section>
+
+    <!-- Routenplaner -->
+    <section id="planner" class="screen">
+      <div class="search-inputs">
+        <div class="input-group">
+          <button class="start-input">Start eingeben</button>
+          <div class="selected-station" id="start-output">Keine Haltestelle ausgewählt</div>
+        </div>
+
+        <div class="input-group">
+          <button class="end-input">Ziel eingeben</button>
+          <div class="selected-station" id="end-output">Keine Haltestelle ausgewählt</div>
+        </div>
+        <div id="date-time-widget" class="input-group">
+          <p>Datum und Uhrzeit wählen</p>
+          <button id="dt-btn"></button>
+          <div id="dt-overlay">
+            <div id="dt-picker">
+              <div id="dt-type-switch">
+                <button id="dt-arrival" class="dt-type ">Ankunft</button>
+                <button id="dt-departure" class="dt-type active">Abfahrt</button>
+              </div>
+             <!-- Beschriftung -->
+<div class="dt-row labels">
+  <div><span>Jahr</span></div>
+  <div><span>Monat</span></div>
+  <div><span>Tag</span></div>
+</div>
+
+            <!-- Auswahlfelder -->
+            <div class="dt-row">
+              <select id="dt-year"></select>
+              <select id="dt-month"></select>
+              <select id="dt-day"></select>
+            </div>
+
+              <div class="dt-row">
+                <select id="dt-hour"></select> :
+                <select id="dt-minute"></select>
+              </div>
+              <div id="dt-add-buttons">
+                <button class="dt-add" data-minutes="15">+15 min</button>
+                <button class="dt-add" data-minutes="30">+30 min</button>
+                <button class="dt-add" data-minutes="60">+1 h</button>
+              </div>
+              
+              <button id="dt-confirm">OK</button>
+            </div>
+          </div>
+     
+      </div>
+      <button id="plan-button">Finden</button>
+     
+    </section>
+
+    <!-- Ergebnisse -->
+    <section id="results" class="screen">
+    </head>
+    <body>
+    
+      <div class="journey"></div>
+    
+      <script>
+        // Beispielstruktur: Hier deine echten Journey-Daten einfügen
+       
+      </script> 
+        
+    
+       
+    </section>
+
+    <!-- Details -->
+    <section id="detail" class="screen">
+      <h2>Fahrplan-Details</h2>
+      <div class="connection-detail" id="trip1">
+        <h3>Kiel Hbf → Hamburg Hbf</h3>
+        <p>Abfahrt: 10:00, Ankunft: 12:30</p>
+        <p>Route: Kiel Hbf (ICE) → Neumünster (RE) → Hamburg Hbf</p>
+        <p>Preis: 24 €</p>
+        <button class="ticket-list">Ticket kaufen</button>
+      </div>
+      <div class="connection-detail" id="trip2" style="display:none;">
+        <h3>Kiel Hbf → Hamburg Hbf</h3>
+        <p>Abfahrt: 10:45, Ankunft: 13:15</p>
+        <p>Route: Kiel Hbf (IC) → Itzehoe (RB) → Hamburg Hbf</p>
+        <p>Preis: 30 €</p>
+        <button class="ticket-list">Ticket kaufen</button>
+      </div>
+    </section>
+
+    <!-- Abfahrten -->
+    <section id="stop" class="screen">
+     
+        <h2>Haltestellen in der Nähe</h2>
+        <div id="map-view">Karten-Platzhalter</div>
+        <p>Standort: Flensburg</p>
+     
+    </section>
+
+    <!-- Umgebung -->
+    <section id="map" class="screen">
+      <h2>Umgebungskarte</h2>
+      <div id="map-view">Karten-Platzhalter</div>
+      <p>Standort: Flensburg</p>
+    </section>
+
+    <!-- Tickets -->
+    <section id="tickets" class="screen">
+      <h2>Tickets</h2>
+      <ul class="ticket-list">
+        <li><button>Deutschlandticket <span>Weiter</span></button></li>
+        <li><button>Tageskarte <span>Weiter</span></button></li>
+        <li><button>Familienkarte <span>Weiter</span></button></li>
+        <li><button>Kleingruppenkarte <span>Weiter</span></button></li>
+        <li><button>Einzelfahrkarte <span>Weiter</span></button></li>
+      </ul>
+    </section>
+
+    <!-- Einstellungen -->
+    <section id="settings" class="screen">
+      <h2>Einstellungen</h2>
+      <ul class="toggle-list">
+        <li><label>Benachrichtigungen</label><input type="checkbox"></li>
+        <li><label>Barrierefreiheit</label><input type="checkbox"></li>
+        <li><label>Sprache</label>
+          <select><option>Deutsch</option><option>Englisch</option></select>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Alarme -->
+    <section id="alarms" class="screen">
+      <h2>Alarme</h2>
+      <ul class="toggle-list">
+        <li><label>Push-Nachrichten</label><input type="checkbox"></li>
+        <li><label>Störungen (Bus/Bahn)</label><input type="checkbox"></li>
+        <li><label>E-Mail Newsletter</label><input type="checkbox"></li>
+      </ul>
+    </section>
+
+    <!-- Favoriten -->
+    <section id="favorites" class="screen">
+      <h2>Favoriten</h2>
+      <ul class="result-list" id="result-list">
+
+      </ul>
+      
+    </section>
+
+<!--  Info -->
+    <section id="info" class="screen">
+      <h2>Info</h2>
+      <p>NAH.SH Verkehrsapp Prototyp</p>
+      <p>&copy; 2025 Verkehrsverbund Schleswig-Holstein</p>
+    </section>
+
+
+<!--  searching -->
+    <section id="search" class="screen">
+      <h2>Namen eingeben</h2>
+      <input type="text" id="query" placeholder="Station eingeben...">
+      <div id="output">Suchergebnisse werden hier angezeigt...</div>
+    </section>
+
+
+  </main>
+
+<script type="text/javascript" src="frontend.js"></script>
+
+  </script>
+</body>
+</html>
