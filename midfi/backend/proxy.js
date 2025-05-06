@@ -13,6 +13,7 @@ app.use(cors());
 app.get('/api/locations', async (req, res) => {
   const query = req.query.query;
   const num = parseInt(req.query.num,10);
+  console.log("api kommt durch")
   if (!query) {
     return res.status(400).json({ error: 'Query parameter "query" is required' });
   }
@@ -80,5 +81,5 @@ fs.writeFileSync('journeys.json', JSON.stringify(journey, null, 2), 'utf8');
 
 const PORT = 3000;
 app.listen(PORT, () => {
-  console.log(`Proxy läuft auf http://localhost:${PORT}`);
+  console.log(`Proxy läuft auf http://192.168.178.57:${PORT}`);
 });

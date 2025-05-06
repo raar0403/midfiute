@@ -89,7 +89,7 @@ document.getElementById('plan-button').addEventListener('click', async () => {
     }
     try {
       // Anfrage an den Proxy-Server senden
-      const response = await fetch(`http://localhost:3000/api/locations?query=${encodeURIComponent(query)}&num=1&id=1`);
+      const response = await fetch(`/api/locations?query=${encodeURIComponent(query)}&num=1&id=1`);
       if (!response.ok) {
         throw new Error(`Fehler: ${response.statusText}`);
       }
@@ -108,7 +108,7 @@ document.getElementById('plan-button').addEventListener('click', async () => {
     const from = startendids[0];
     const to = startendids[1];
     // Anfrage an den Proxy-Server senden
-    const response = await fetch(`http://localhost:3000/api/route?from=${from}&to=${to}`);
+    const response = await fetch(`/api/route?from=${from}&to=${to}`);
     if (!response.ok) {
       throw new Error(`Fehler: ${response.statusText}`);
     }
@@ -135,7 +135,7 @@ queryInput.addEventListener('keyup', async () => {
 
   try {
     // Anfrage an den Proxy-Server senden
-    const response = await fetch(`http://localhost:3000/api/locations?query=${encodeURIComponent(query)}&num=${4}`);
+    const response = await fetch(`/api/locations?query=${encodeURIComponent(query)}&num=${4}`);
     if (!response.ok) {
       throw new Error(`Fehler: ${response.statusText}`);
     }

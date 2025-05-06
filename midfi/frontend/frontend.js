@@ -1,3 +1,5 @@
+
+
 // Menü umschalten
 const menu = document.getElementById('menu');
 const menuToggle = document.getElementById('menu-toggle');
@@ -81,8 +83,46 @@ function changeOutput(id){
 }
 
 document.getElementById('plan-button').addEventListener('click', async () => {
-  let startend = [ {start: start_output.textContent, end: end_output.textContent}, {start: start_output.textContent, end: end_output.textContent}];
-  journeyedit(startend)
+  let startend = { start: start_output.textContent, end: end_output.textContent };
+  let startendids = [];
+  let query;
+  for (const element of Object.values(startend)) {
+    const query = element; // Beispiel: Zugriff auf den Textinhalt
+    if (!query) {
+      return;
+    }
+    try {
+      // Anfrage an den Proxy-Server senden
+      const response = await fetch(`/api/locations?query=${encodeURIComponent(query)}&num=1&id=1`);
+      if (!response.ok) {
+        throw new Error(`Fehler: ${response.statusText}`);
+      }
+     
+      const data = await response.json();
+      startendids.push(data[0].id);
+
+    } catch (err) {
+      outputDiv.textContent = `Fehler: ${err.message}`;
+    }
+  }
+
+
+
+  try {
+    const from = startendids[0];
+    const to = startendids[1];
+    // Anfrage an den Proxy-Server senden
+    const response = await fetch(`/api/route?from=${from}&to=${to}`);
+    if (!response.ok) {
+      throw new Error(`Fehler: ${response.statusText}`);
+    }
+    const data = await response.json();
+    outputDiv.innerHTML = "";
+    journeyedit(data)
+  } catch (err) {
+    outputDiv.textContent = `Fehler: ${err.message}`;
+  }
+  
 show("results","Ergebnisse")
 });
 
@@ -92,19 +132,33 @@ show("results","Ergebnisse")
 
 queryInput.addEventListener('keyup', async () => {
   const query = queryInput.value.trim();
-      const endungen = ["","ZOB", "HBF"]
-      outputDiv.innerHTML= ""
-      endungen.forEach(element =>{
-        let btn = document.createElement("button");
-        btn.textContent = `${query} ${element}`;
-        btn.classList = "choice";
-        btn.id = element;
-        outputDiv.appendChild(btn);
-      })
-      
+  if (!query) {
+    outputDiv.textContent = 'Bitte geben Sie eine Suchanfrage ein.';
+    return;
+  }
+
+  try {
+    // Anfrage an den Proxy-Server senden
+    const response = await fetch(`/api/locations?query=${encodeURIComponent(query)}&num=${4}`);
+    if (!response.ok) {
+      throw new Error(`Fehler: ${response.statusText}`);
+    }
+    const data = await response.json();
+    outputDiv.innerHTML = "";
+    data.forEach(element => {
+      let btn = document.createElement("button");
+      btn.textContent = element;
+      btn.classList = "choice";
+      btn.id = element;
+      outputDiv.appendChild(btn);
 
     });
     
+    //outputDiv.textContent = JSON.stringify(data, null, 2);
+  } catch (err) {
+    outputDiv.textContent = `Fehler: ${err.message}`;
+  }
+});
     //outputDiv.textContent = JSON.stringify(data, null, 2);
  
 outputDiv.addEventListener('click', function(event) {
@@ -135,52 +189,52 @@ function journeyedit(journeyobj) {
   const wrapper = document.querySelector('.journey');
   wrapper.innerHTML = ""; // Vorherige Inhalte löschen, um Duplikate zu vermeiden
 
-  journey.forEach((entry, index) => {
+  journey.journeys.forEach((entry, index) => {
     const journeyDiv = document.createElement('div');
     journeyDiv.className = 'journey-entry';
 
     const title = document.createElement('h2');
     title.textContent = `Route ${index + 1}`;
     btn = document.createElement("button")
-    btn.textContent ="Favorit Hinzufügen ♥";
-    btn.classList = "choice";
-    
+    btn.textContent ="♥";
     btn.dataset.from = start_output.textContent
     btn.dataset.to = end_output.textContent
-  
-   // btn.classList = "fav-button"
+    btn.dataset.active = "true"
+    const stops = entry.legs.map(leg => ({
+      from: leg.origin.id,
+      to: leg.destination.id,
+      line: leg.line?.name
+    }));
+    btn.dataset.stops = JSON.stringify(stops) ;
+    btn.classList = "choice"
     btn.addEventListener("click", function(event){
-      
-      saveFavorite(btn.dataset)
+      if(!!btn.dataset.active){
+        console.log(btn.dataset.active)
+        console.log(btn.dataset)
+        saveFavorite(btn.dataset)
+        btn.style.backgroundColor = "fff"
+        btn.dataset.active = "false"
+      }
+     
+     
     });
 
-   
+    
     journeyDiv.appendChild(title);
     journeyDiv.appendChild(btn)
-    
+    entry.legs.forEach((leg, i) => {
       const legDiv = document.createElement('div');
       legDiv.className = 'leg';
 
-      const from = entry.start;
-      const to = entry.end;
+      const from = leg.origin?.name ?? 'Unbekannt';
+      const to = leg.destination?.name ?? 'Unbekannt';
 
       // Abfahrts- und Ankunftszeiten formatieren
-      let start_time;
-      let end_time;
-      const travel_time = 3*Math.random()
-      if(selectedType==="Ankunft"){
-        start_time = addHoursToDateString(selectedDateTime,(-travel_time))
-        end_time = selectedDateTime
-      }else{
-        start_time = selectedDateTime
-        end_time = addHoursToDateString(selectedDateTime,travel_time)
+      const departure = leg.departure ? new Date(leg.departure).toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' }) : 'Keine Angabe';
+      const arrival = leg.arrival ? new Date(leg.arrival).toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' }) : 'Keine Angabe';
 
-      }
-      const departure = start_time ? new Date(start_time).toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' }) : 'Keine Angabe';
-      const arrival = end_time ? new Date(end_time).toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' }) : 'Keine Angabe';
+      const line = leg.line?.name ?? 'Fußweg oder unbekannt';
 
-      const line =  'Bus';
-      
       legDiv.innerHTML = `
         <div class="leg-detail">Von: ${from}</div>
         <div class="leg-detail">Nach: ${to}</div>
@@ -190,13 +244,13 @@ function journeyedit(journeyobj) {
       `;
 
       journeyDiv.appendChild(legDiv);
-      console.log(selectedDateTime,selectedType)
-      wrapper.appendChild(journeyDiv);
     });
 
-    
- 
+    wrapper.appendChild(journeyDiv);
+  });
 }
+ 
+
 function saveFavorite(fav) {
   const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
   favorites.push(fav);
