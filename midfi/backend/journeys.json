@@ -1,6 +1,6 @@
 {
-  "earlierRef": "3|OB|MT#14#91575#91575#91677#91677#0#0#365#91533#1#0#131#0#0#-2147483648#1#2|PDH#4c8596c389a41a036bf86ea0776c4d62|RD#6052025|RT#133347|US#1|RS#INIT",
-  "laterRef": "3|OF|MT#14#91575#91575#91677#91677#0#0#365#91533#1#0#131#0#0#-2147483648#1#2|PDH#4c8596c389a41a036bf86ea0776c4d62|RD#6052025|RT#133347|US#1|RS#INIT",
+  "earlierRef": "3|OB|MT#14#90975#90975#91077#91077#0#0#5#90754#1#0#131#0#0#-2147483648#1#2|PDH#e580c019fb59cd17afdb3fda78e466bb|RD#8052025|RT#3416|US#1|RS#INIT",
+  "laterRef": "3|OF|MT#14#90975#90975#91077#91077#0#0#5#90754#1#0#131#0#0#-2147483648#1#2|PDH#e580c019fb59cd17afdb3fda78e466bb|RD#8052025|RT#3416|US#1|RS#INIT",
   "journeys": [
     {
       "type": "journey",
@@ -100,18 +100,18 @@
               "isMeta": true
             }
           },
-          "departure": "2025-05-06T14:15:00+02:00",
-          "plannedDeparture": "2025-05-06T14:15:00+02:00",
+          "departure": "2025-05-08T04:15:00+02:00",
+          "plannedDeparture": "2025-05-08T04:15:00+02:00",
           "departureDelay": 0,
-          "arrival": "2025-05-06T14:30:00+02:00",
-          "plannedArrival": "2025-05-06T14:30:00+02:00",
+          "arrival": "2025-05-08T04:30:00+02:00",
+          "plannedArrival": "2025-05-08T04:30:00+02:00",
           "arrivalDelay": 0,
           "reachable": true,
-          "tripId": "1|51493|0|100|6052025",
+          "tripId": "1|51396|0|100|8052025",
           "line": {
             "type": "line",
             "id": "de-hvv-re7",
-            "fahrtNr": "11175",
+            "fahrtNr": "11531",
             "name": "RE7",
             "public": true,
             "adminCode": "800201",
@@ -124,7 +124,7 @@
               "name": "DB Regio AG Nord"
             }
           },
-          "direction": "Hamburg Hbf",
+          "direction": "Neumünster",
           "arrivalPlatform": "1",
           "plannedArrivalPlatform": "1",
           "arrivalPrognosisType": "prognosed",
@@ -186,8 +186,8 @@
               "arrivalPlatform": null,
               "arrivalPrognosisType": null,
               "plannedArrivalPlatform": null,
-              "departure": "2025-05-06T14:15:00+02:00",
-              "plannedDeparture": "2025-05-06T14:15:00+02:00",
+              "departure": "2025-05-08T04:15:00+02:00",
+              "plannedDeparture": "2025-05-08T04:15:00+02:00",
               "departureDelay": 0,
               "departurePlatform": null,
               "departurePrognosisType": "prognosed",
@@ -248,14 +248,14 @@
                   "isMeta": true
                 }
               },
-              "arrival": "2025-05-06T14:23:00+02:00",
-              "plannedArrival": "2025-05-06T14:23:00+02:00",
+              "arrival": "2025-05-08T04:23:00+02:00",
+              "plannedArrival": "2025-05-08T04:23:00+02:00",
               "arrivalDelay": 0,
               "arrivalPlatform": null,
               "arrivalPrognosisType": "prognosed",
               "plannedArrivalPlatform": null,
-              "departure": "2025-05-06T14:24:00+02:00",
-              "plannedDeparture": "2025-05-06T14:24:00+02:00",
+              "departure": "2025-05-08T04:24:00+02:00",
+              "plannedDeparture": "2025-05-08T04:24:00+02:00",
               "departureDelay": 0,
               "departurePlatform": null,
               "departurePrognosisType": "prognosed",
@@ -309,8 +309,8 @@
                   "isMeta": true
                 }
               },
-              "arrival": "2025-05-06T14:30:00+02:00",
-              "plannedArrival": "2025-05-06T14:30:00+02:00",
+              "arrival": "2025-05-08T04:30:00+02:00",
+              "plannedArrival": "2025-05-08T04:30:00+02:00",
               "arrivalDelay": 0,
               "arrivalPlatform": null,
               "arrivalPrognosisType": "prognosed",
@@ -339,7 +339,7 @@
           ],
           "cycle": {
             "min": 3600,
-            "max": 3600,
+            "max": 3660,
             "nr": 3
           }
         },
@@ -438,18 +438,18 @@
               "isMeta": true
             }
           },
-          "departure": "2025-05-06T14:58:00+02:00",
-          "plannedDeparture": "2025-05-06T14:58:00+02:00",
-          "departureDelay": 0,
-          "arrival": "2025-05-06T15:57:00+02:00",
-          "plannedArrival": "2025-05-06T15:57:00+02:00",
-          "arrivalDelay": 0,
+          "departure": "2025-05-08T04:58:00+02:00",
+          "plannedDeparture": "2025-05-08T04:58:00+02:00",
+          "departureDelay": null,
+          "arrival": "2025-05-08T05:57:00+02:00",
+          "plannedArrival": "2025-05-08T05:57:00+02:00",
+          "arrivalDelay": null,
           "reachable": true,
-          "tripId": "1|47295|8|100|6052025",
+          "tripId": "1|47297|0|100|8052025",
           "line": {
             "type": "line",
             "id": "de-nahsh-re74",
-            "fahrtNr": "654",
+            "fahrtNr": "669",
             "name": "RE74",
             "public": true,
             "adminCode": "O0____",
@@ -524,11 +524,11 @@
               "arrivalPlatform": null,
               "arrivalPrognosisType": null,
               "plannedArrivalPlatform": null,
-              "departure": "2025-05-06T14:58:00+02:00",
-              "plannedDeparture": "2025-05-06T14:58:00+02:00",
-              "departureDelay": 0,
+              "departure": "2025-05-08T04:58:00+02:00",
+              "plannedDeparture": "2025-05-08T04:58:00+02:00",
+              "departureDelay": null,
               "departurePlatform": null,
-              "departurePrognosisType": "prognosed",
+              "departurePrognosisType": null,
               "plannedDeparturePlatform": null,
               "remarks": [
                 {
@@ -586,17 +586,17 @@
                   "isMeta": true
                 }
               },
-              "arrival": "2025-05-06T15:05:00+02:00",
-              "plannedArrival": "2025-05-06T15:05:00+02:00",
-              "arrivalDelay": 0,
+              "arrival": "2025-05-08T05:05:00+02:00",
+              "plannedArrival": "2025-05-08T05:05:00+02:00",
+              "arrivalDelay": null,
               "arrivalPlatform": null,
-              "arrivalPrognosisType": "prognosed",
+              "arrivalPrognosisType": null,
               "plannedArrivalPlatform": null,
-              "departure": "2025-05-06T15:06:00+02:00",
-              "plannedDeparture": "2025-05-06T15:06:00+02:00",
-              "departureDelay": 0,
+              "departure": "2025-05-08T05:06:00+02:00",
+              "plannedDeparture": "2025-05-08T05:06:00+02:00",
+              "departureDelay": null,
               "departurePlatform": null,
-              "departurePrognosisType": "prognosed",
+              "departurePrognosisType": null,
               "plannedDeparturePlatform": null
             },
             {
@@ -647,17 +647,17 @@
                   "isMeta": true
                 }
               },
-              "arrival": "2025-05-06T15:15:00+02:00",
-              "plannedArrival": "2025-05-06T15:15:00+02:00",
-              "arrivalDelay": 0,
+              "arrival": "2025-05-08T05:15:00+02:00",
+              "plannedArrival": "2025-05-08T05:15:00+02:00",
+              "arrivalDelay": null,
               "arrivalPlatform": null,
-              "arrivalPrognosisType": "prognosed",
+              "arrivalPrognosisType": null,
               "plannedArrivalPlatform": null,
-              "departure": "2025-05-06T15:15:00+02:00",
-              "plannedDeparture": "2025-05-06T15:15:00+02:00",
-              "departureDelay": 0,
+              "departure": "2025-05-08T05:15:00+02:00",
+              "plannedDeparture": "2025-05-08T05:15:00+02:00",
+              "departureDelay": null,
               "departurePlatform": null,
-              "departurePrognosisType": "prognosed",
+              "departurePrognosisType": null,
               "plannedDeparturePlatform": null
             },
             {
@@ -708,17 +708,17 @@
                   "isMeta": true
                 }
               },
-              "arrival": "2025-05-06T15:25:00+02:00",
-              "plannedArrival": "2025-05-06T15:25:00+02:00",
-              "arrivalDelay": 0,
+              "arrival": "2025-05-08T05:25:00+02:00",
+              "plannedArrival": "2025-05-08T05:25:00+02:00",
+              "arrivalDelay": null,
               "arrivalPlatform": null,
-              "arrivalPrognosisType": "prognosed",
+              "arrivalPrognosisType": null,
               "plannedArrivalPlatform": null,
-              "departure": "2025-05-06T15:26:00+02:00",
-              "plannedDeparture": "2025-05-06T15:26:00+02:00",
-              "departureDelay": 0,
+              "departure": "2025-05-08T05:26:00+02:00",
+              "plannedDeparture": "2025-05-08T05:26:00+02:00",
+              "departureDelay": null,
               "departurePlatform": null,
-              "departurePrognosisType": "prognosed",
+              "departurePrognosisType": null,
               "plannedDeparturePlatform": null
             },
             {
@@ -769,17 +769,17 @@
                   "isMeta": true
                 }
               },
-              "arrival": "2025-05-06T15:44:00+02:00",
-              "plannedArrival": "2025-05-06T15:44:00+02:00",
-              "arrivalDelay": 0,
+              "arrival": "2025-05-08T05:44:00+02:00",
+              "plannedArrival": "2025-05-08T05:44:00+02:00",
+              "arrivalDelay": null,
               "arrivalPlatform": null,
-              "arrivalPrognosisType": "prognosed",
+              "arrivalPrognosisType": null,
               "plannedArrivalPlatform": null,
-              "departure": "2025-05-06T15:45:00+02:00",
-              "plannedDeparture": "2025-05-06T15:45:00+02:00",
-              "departureDelay": 0,
+              "departure": "2025-05-08T05:45:00+02:00",
+              "plannedDeparture": "2025-05-08T05:45:00+02:00",
+              "departureDelay": null,
               "departurePlatform": null,
-              "departurePrognosisType": "prognosed",
+              "departurePrognosisType": null,
               "plannedDeparturePlatform": null
             },
             {
@@ -830,9 +830,9 @@
                   "isMeta": true
                 }
               },
-              "arrival": "2025-05-06T15:57:00+02:00",
-              "plannedArrival": "2025-05-06T15:57:00+02:00",
-              "arrivalDelay": 0,
+              "arrival": "2025-05-08T05:57:00+02:00",
+              "plannedArrival": "2025-05-08T05:57:00+02:00",
+              "arrivalDelay": null,
               "arrivalPlatform": null,
               "arrivalPrognosisType": "prognosed",
               "plannedArrivalPlatform": null,
@@ -865,7 +865,7 @@
           }
         }
       ],
-      "refreshToken": "¶HKI¶T$A=1@O=Flensburg@L=4920103@a=128@$A=1@O=Jübek@L=8000334@a=128@$202505061415$202505061430$     RE7$$1$$$$$$§T$A=1@O=Jübek@L=8000334@a=128@$A=1@O=Kiel Hbf@L=4960199@a=128@$202505061458$202505061557$    RE74$$1$$$$$$¶KC¶#VE#2#CF#100#CA#0#CM#0#SICT#0#AM#16401#AM2#0#RT#15#¶KRCC¶#VE#1#",
+      "refreshToken": "¶HKI¶T$A=1@O=Flensburg@L=4920103@a=128@$A=1@O=Jübek@L=8000334@a=128@$202505080415$202505080430$     RE7$$1$$$$$$§T$A=1@O=Jübek@L=8000334@a=128@$A=1@O=Kiel Hbf@L=4960199@a=128@$202505080458$202505080557$    RE74$$1$$$$$$¶KC¶#VE#2#CF#100#CA#0#CM#0#SICT#0#AM#16401#AM2#0#RT#15#¶KRCC¶#VE#1#",
       "cycle": {
         "min": 3600
       },
@@ -1490,5 +1490,5 @@
       ]
     }
   ],
-  "realtimeDataFrom": 1746531199
+  "realtimeDataFrom": 1746657252
 }

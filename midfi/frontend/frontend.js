@@ -71,15 +71,22 @@ document.addEventListener("click", function(e){
 });
 
 
-
+const search = document.getElementById("search")
 const searchButton = document.getElementById('search-button');
 const queryInput = document.getElementById('query');
 const outputDiv = document.getElementById('output');
 let outputtext;
 const start_output = document.getElementById("start-output");
 const end_output = document.getElementById("end-output");
+const hwrapper = document.querySelector("header");
+const fav_toggle = document.getElementById("favorites-toggle")
+const del_btn = document.getElementById("del")
 function changeOutput(id){
   outputtext = document.getElementById(id);
+ 
+ // hwrapper.removeChild(headerTitle)
+  //hwrapper.appendChild(queryInput)
+  queryInput.focus();
 }
 
 document.getElementById('plan-button').addEventListener('click', async () => {
@@ -208,11 +215,11 @@ function journeyedit(journeyobj) {
     btn.dataset.stops = JSON.stringify(stops) ;
     btn.classList = "choice"
     btn.addEventListener("click", function(event){
-      if(!!btn.dataset.active){
+      if(btn.dataset.active == "true"){
         console.log(btn.dataset.active)
         console.log(btn.dataset)
         saveFavorite(btn.dataset)
-        btn.style.backgroundColor = "fff"
+        btn.style.background = "#888"
         btn.dataset.active = "false"
       }
      
@@ -277,8 +284,8 @@ function reload_fav(){
     btn.textContent = `${element.from }   →  ${element.to}`
     btn.classList = "choice"
     const rmv_btn = document.createElement("button");
-    rmv_btn.classList = "choice";
-    rmv_btn.style.backgroundColor = "white"
+    rmv_btn.classList = "choice rmv";
+   // rmv_btn.style.backgroundColor = "white"
     rmv_btn.textContent = "❌"
     mini_wrapper.style.display = "flex";
 mini_wrapper.style.flexDirection = "row";
@@ -304,6 +311,32 @@ document.addEventListener("DOMContentLoaded", (event) => {
 selectedDateTime = new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Berlin" }));
 
 });
+const target = search
+const observer = new MutationObserver(() => {
+  
+  const isActive = target.classList.contains("active");
+  const active_input = hwrapper.querySelector("input") !== null;
+  const active_h1 = hwrapper.querySelector("h1") !== null;
+  
+  if(isActive && !active_input){
+    hwrapper.replaceChild(queryInput,headerTitle);
+    hwrapper.replaceChild(del_btn,fav_toggle)
+    queryInput.focus()
+  }else if(!active_h1){
+    hwrapper.replaceChild(headerTitle,queryInput);
+    hwrapper.replaceChild(fav_toggle,del_btn)
+  }
+});
+
+observer.observe(target, {
+  attributes: true,
+  attributeFilter: ["class"]  
+});
+del_btn.addEventListener("click",()=>{
+queryInput.value = "";
+outputDiv.innerHTML = "Suchergebnisse werden hier angezeigt..."
+});
+
 
 //Uhrzeit Script
 
