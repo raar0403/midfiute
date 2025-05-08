@@ -68,9 +68,7 @@ app.get('/api/route', async (req, res) => {
       stopovers: true,
       tickets: true
     })
-    const fs = require('fs');
-
-fs.writeFileSync('journeys.json', JSON.stringify(journey, null, 2), 'utf8');
+   
     console.log(journey.journeys[0].legs)
     res.json(journey);
   } catch (err) {
