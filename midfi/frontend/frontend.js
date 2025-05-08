@@ -202,11 +202,12 @@ function journeyedit(journeyobj) {
 
     const title = document.createElement('h2');
     title.textContent = `Route ${index + 1}`;
-    btn = document.createElement("button")
+    const btn = document.createElement("button")
     btn.textContent ="♥";
     btn.dataset.from = start_output.textContent
     btn.dataset.to = end_output.textContent
     btn.dataset.active = "true"
+    btn.id = index
     const stops = entry.legs.map(leg => ({
       from: leg.origin.id,
       to: leg.destination.id,
@@ -216,8 +217,7 @@ function journeyedit(journeyobj) {
     btn.classList = "choice"
     btn.addEventListener("click", function(event){
       if(btn.dataset.active == "true"){
-        console.log(btn.dataset.active)
-        console.log(btn.dataset)
+       
         saveFavorite(btn.dataset)
         btn.style.background = "#888"
         btn.dataset.active = "false"
